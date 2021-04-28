@@ -38,10 +38,11 @@
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", "http://192.168.123.150:80/631579451735264526567524327456756415294564527531975164516753157654716151564561567516", true);
             xhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
-            json.push({'name':name,'email':email,'game'game,'steam_url':steam_url})
+            json.push({'name':name,'email':email,'game':game,'steam_url':steam_url})
             console.log(json);
             xhttp.send(json)
         }
+
 
     </script>
 </head>
