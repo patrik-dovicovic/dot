@@ -1,7 +1,9 @@
-@font-face {
+/*@font-face {
     font-family: font;
     src: url(FONTSFREE.TTF);
 }
+*/
+
 html{
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body{
     padding: 0;
     /* background-color: #4e4e4e; */
     background-color: #3092c0;
+    font-family: 'Righteous', sans-serif;
 }
 .main-header{
     margin: 0;
