@@ -70,3 +70,7 @@ body{
 .input {
   font-family: 'Roboto', sans-serif;
 }
+
+.input-label {
+  margin-bottom: 5px;
+}
