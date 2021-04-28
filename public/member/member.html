@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../shared.css">
+    <title>Document</title>
+    <style>
+        main{
+            margin: 0;
+            padding: 0;
+        }
+        .form{
+            width: 20vw;
+            margin: auto;
+            padding: 3vw;
+        }
+        .input{
+            width: 30vw;
+            border-radius: 15px;
+            height: 2vw;
+            outline: none;
+            border: none;
+            padding: 0 1vw;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <ul class="main-nav__items">
+            <li class="main-nav__item">
+                <a href="about/about.html">About</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="players/players.html">Players</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="contact/contact.html">Contact</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="news/news.html">News</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="videos/videos.html">Videos</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="member.html">Become member</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="form">
+            <label for="name">First name:</label><br>
+            <input class="input" type="text" id="name" name="fname" value=""><br><label for="name">First name:</label><br>
+            <input class="input" type="text" id="name" name="fname" value=""><br><label for="name">First name:</label><br>
+            <input class="input" type="text" id="name" name="fname" value=""><br>
+            <input type="submit" value="Submit">
+        </div>
+    </main>
+</body>
+<script>
+    function send_json(json){
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "http://192.168.0.151:80/631579451735264526567524327456756415294564527531975164516753157654716151564561567516", true);
+        xhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+        xhttp.send(json)
+    }
+
+</script>
+</html>
