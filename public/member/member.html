@@ -58,15 +58,18 @@
     <main>
         <div class="form">
             <label for="name">First name:</label><br>
-            <input class="input" type="text" id="name" name="fname" value=""><br><label for="name">First name:</label><br>
-            <input class="input" type="text" id="name" name="fname" value=""><br><label for="name">First name:</label><br>
-            <input class="input" type="text" id="name" name="fname" value=""><br>
-            <input type="submit" value="Submit">
+            <input class="input" type="name" id="name" name="name"><br><label for="name">Name:</label><br>
+            <input class="input" type="email" id="email" name="mail"><br><label for="mail">Mail:</label><br>
+            <input class="input" type="text" id="game" name="pass"><br><label for="game">Game:</label><br>
+            <input class="input" type="url" id="steam_url" name="steam_url"><br><label for="steam_url">Steam Link:</label>
+            <input type="submit" value="Submit" onclick="send_json">
         </div>
     </main>
 </body>
 <script>
-    function send_json(json){
+    function send_json(json) {
+        var name = document.getElementById('name')
+        var name = document.getElementById("")
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "http://192.168.0.151:80/631579451735264526567524327456756415294564527531975164516753157654716151564561567516", true);
         xhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
