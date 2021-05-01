@@ -1,20 +1,27 @@
+
+var PORT = process.env.PORT || 80;
 const express = require('express')
 const app = express()
 const path = require('path');
 const cors = require('cors');
+<<<<<<< HEAD
 const bp = require('body-parser')
 var nodemailer = require('nodemailer');
 
 app.use(bp.json())
 app.use(bp.urlencoded({ extended: true }))
+=======
+
+>>>>>>> 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")))
-app.listen(80);
+app.listen(PORT);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/', 'main.html'));
 });
 
+<<<<<<< HEAD
 app.post('/6', (req, res) => {
     var x = req.body[0]
     console.log(req.body)
@@ -51,4 +58,8 @@ app.post('/6', (req, res) => {
           console.log('Email sent: ' + info.response);
         }
       });
+=======
+app.post('/631579451735264526567524327456756415294564527531975164516753157654716151564561567516', (req, res) => {
+    console.log(req.body[0])
+>>>>>>> 4df040de562336276fde9485a226152fa90c01f1
 });
