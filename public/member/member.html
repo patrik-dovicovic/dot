@@ -40,7 +40,7 @@
             xhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
             json.push({'name':name,'email':email,'game':game,'steam_url':steam_url})
             console.log(json);
-            xhttp.send(json)
+            xhttp.send(JSON.stringify(json))
         }
 
 
