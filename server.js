@@ -1,5 +1,3 @@
-const http = require('http');
-const hostname = '127.0.0.1';
 var PORT = process.env.PORT || 80;
 const express = require('express')
 const app = express()
