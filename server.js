@@ -1,3 +1,5 @@
+const http = require('http');
+const hostname = '127.0.0.1';
 var PORT = process.env.PORT || 80;
 const express = require('express')
 const app = express()
@@ -38,11 +40,11 @@ app.post('/6', (req, res) => {
         from: 'dot.esports.webdev@gmail.com',
         to: 'dot.esports.webdev@gmail.com',
         subject: 'new user',
-        text: ` username = ${username}
- mail = ${mail}
- games = ${games}
-|| steam = ${steam}
-`
+        text: ' username = ${username}
+                mail = ${mail}
+                games = ${games}
+                steam = ${steam}'
+
       };
 
       transporter.sendMail(mailOptions, function(error, info){
